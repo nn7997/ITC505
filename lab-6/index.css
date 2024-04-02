@@ -64,7 +64,7 @@ aside {
     }
 }
 
-footer {
+.footer {
     grid-area: footer;
     background-color: #6c757d;
     color: white;
@@ -106,11 +106,3 @@ button:hover {
 #arrayInput {
     margin-right: 10px;
 }
- #addendum {
-    grid-area: footer;
-    color: #fff;
-    text-align: center;
-    margin-top: 25px;
-    padding: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
