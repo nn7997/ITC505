@@ -28,8 +28,7 @@
         </a>
         <p><h3>Click on the sony image.</h3></p>
     </aside>
-    <footer>
-        <h3>Addendum</h3>
+ <h3>Addendum</h3>
         <p>
             <strong>Problem Solved:</strong> The JavaScript functionality implemented in this assignment is 
             an array sorter. It enables users to input a series of numbers, which are then sorted in ascending 
@@ -49,7 +48,15 @@
             Another challenge was presenting the sorted array in a user-friendly format, which was addressed 
             by joining the array elements into a string for display.
         </p>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
     </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
     
     <script src="index.js"></script>
 </body>
