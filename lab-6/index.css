@@ -64,7 +64,7 @@ aside {
     }
 }
 
-Addendum {
+footer{
     grid-area: footer;
     background-color: #6c757d;
     color: white;
