@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - CS212</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lab 6</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Array Sorter</h2>
+        <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+        <button onclick="sortArray()">Sort</button>
+        <div id="sortedArray"></div>
+    </main>
+    <aside>
+        <a href="https://www.amazon.com/Sony-SRS-XB13-Waterproof-Bluetooth-SRSXB13/dp/B08ZJ6DQNY/?_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_3456c437_dt_pd_gw_unk&pd_rd_w=c3Nkm&content-id=amzn1.sym.4bf7e8b7-0852-4987-b330-29e3ed6de9c0&pf_rd_p=4bf7e8b7-0852-4987-b330-29e3ed6de9c0&pf_rd_r=9K2W58WSJH47NXHX8JMS&pd_rd_wg=6Dmhi&pd_rd_r=68f7386d-7d0a-46df-89ae-949df8fcf6f2&th=1" target="_blank">
+            <img src="sony2.jpeg" alt="Advertisement">
+        </a>
+        <p><h3>Click on the sony image.</h3></p>
+    </aside>
+    <footer>
+        <h3>Addendum</h3>
+        <p>
+            <strong>Problem Solved:</strong> The JavaScript functionality implemented in this assignment is 
+            an array sorter. It enables users to input a series of numbers, which are then sorted in ascending 
+            order upon the user's request.
+        </p>
+        <p>
+            <strong>Overview of Solution:</strong> The solution involves JavaScript code that captures user 
+            input from an HTML text field. The input string is split into an array of numbers. 
+            The JavaScript `sort` function is then used to sort these numbers. The sorted array is displayed 
+            back to the user in the web page's main content area.
+        </p>
+        <p>
+            <strong>Challenges and Solutions:</strong> A key challenge was handling different types of inputs, 
+            such as handling spaces after commas and ensuring that only numerical values are sorted. 
+            This was resolved by using the `map` and `parseInt` functions to convert the input string 
+            into an array of integers. Additionally, input validation was implemented to ignore non-numeric values. 
+            Another challenge was presenting the sorted array in a user-friendly format, which was addressed 
+            by joining the array elements into a string for display.
+        </p>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
