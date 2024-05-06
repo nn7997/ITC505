@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Addendum: Detailed Description of LIGHTS OUT Game Development</title>
+  <link rel="stylesheet" href="addendum.css">
+</head>
+<body>
+
+  <h1>Addendum: Detailed Description of LIGHTS OUT Game Development</h1>
+
+  <h2>Objective:</h2>
+  <p>The Lights Out game is a grid-based puzzle where the player aims to turn off all the lights on the board. The game is implemented using HTML, CSS, and JavaScript to create an interactive and visually appealing user experience.</p>
+
+  <h2>HTML Structure:</h2>
+  <ol>
+    <li><strong>Game Title:</strong> The game title is displayed prominently using an <code>&lt;h1&gt;</code> element, providing a clear indication of the game's identity.</li>
+    <li><strong>Game Board:</strong> The game board is represented as a grid using the <code>&lt;div&gt;</code> element with the class <code>board</code>. Each square is represented as a child <code>&lt;div&gt;</code> within the board container.</li>
+    <li><strong>Buttons and Metrics:</strong> A "New Game" button triggers the start of a new game. The number of moves and a timer indicating the elapsed time are displayed using <code>&lt;p&gt;</code> elements.</li>
+  </ol>
+
+  <h2>CSS Styling:</h2>
+  <ol>
+    <li><strong>Background:</strong> The body has a background image (GIF) covering the entire viewport, creating an immersive ambiance for the game.</li>
+    <li><strong>Container Styling:</strong> The game container is centered vertically and horizontally using flexbox, ensuring a responsive layout.</li>
+    <li><strong>Square Styling:</strong> Each square on the game board is styled with a fixed size, background image (representing a light), and borders. The <code>is-off</code> class toggles the appearance of each square to create the effect of turning off the lights.</li>
+    <li><strong>Button Styling:</strong> New Game button and other buttons have a distinct style, using transitions to enhance the interactive feel.</li>
+  </ol>
+
+  <h2>JavaScript Logic:</h2>
+  <ol>
+    <li><strong>Moves and Move Limit:</strong> The <code>moves</code> variable tracks the number of moves made by the player. A maximum move limit (<code>MAX_MOVES</code>) is set to provide a challenge. The move count is displayed to the user.</li>
+    <li><strong>Timer Functionality:</strong> The game features a timer that starts when the game begins and stops upon winning or reaching the move limit. The timer displays elapsed time in minutes and seconds.</li>
+    <li><strong>Square Toggling:</strong> Clicking on a square toggles its state and the state of adjacent squares, creating a chain reaction effect.</li>
+    <li><strong>Game State Checking:</strong> The game checks for a win condition when all squares are turned off (<code>isWin</code>). Additionally, a loss condition is triggered if the move limit is reached.</li>
+    <li><strong>Alerts on Win/Loss:</strong> When the game is won or lost, a congratulatory or game-over message is displayed, including the number of moves and time taken.</li>
+  </ol>
+
+  <h2>Game Flow:</h2>
+  <ol>
+    <li><strong>Initialization:</strong> The game initializes with a new game, setting moves and timer to zero, and starting the timer.</li>
+    <li><strong>Square Interaction:</strong> Clicking on a square triggers the toggling of its state and adjacent squares.</li>
+    <li><strong>Game State Check:</strong> After each move, the game checks whether the win or loss conditions are met.</li>
+    <li><strong>End Game Alerts:</strong> If the player wins, a congratulatory alert is shown with the number of moves and time taken. If the player loses, a game-over alert is displayed.</li>
+  </ol>
+
+  <h2>Conclusion:</h2>
+  <p>The Lights Out game provides an engaging and challenging puzzle experience, encouraging players to strategize and efficiently turn off all the lights within the move limit. The combination of visual appeal, interactive design, and logic implementation makes this game an enjoyable and rewarding experience for users.</p>
+
+</body>
+</html>

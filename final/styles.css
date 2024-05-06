@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://i.makeagif.com/media/10-02-2015/N4Yshq.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f8f8f8;
+  color: rgba(80, 203, 69, 0.675);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.game-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: gold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 15px;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-image: url(https://veerasundar.com/lights-out-online-game/assets/torch-11c92b03.gif); /* Replace 'your-image-url.jpg' with the actual URL or path of your image */
+  background-size: cover;
+  background-color: goldenrod;
+  border: 3px solid #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.square.is-off {
+  background-image: url(data:image/png;base64,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); /* Replace 'your-other-image-url.jpg' with the actual URL or path of your image */
+  color: #f2eded; /* Text color on top of the image */
+  background-color: #231d1dc7;
+
+}
+
+.square:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+#timer {
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b8860b;
+  color: gold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: black;
+  color: #ecf0f1;
+}
+
+a {
+  color: #e0e5e8;
+}
